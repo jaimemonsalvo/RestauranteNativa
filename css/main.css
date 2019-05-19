@@ -1,0 +1,833 @@
+/*! HTML5 Boilelate v7.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+ 
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+   
+   .parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+
+
+.contenedor{
+    padding: 20px;
+}
+
+.imaprincipal{
+
+    padding: 20px;
+}
+.parallax1{
+background-image: url(../img/010.jpg);
+}
+
+.parallax2{
+
+background-image: url(../img/_MG_7571.jpg);
+}
+
+
+img{
+
+    max-width: 150px;
+}
+
+
+.navbar-dark{
+
+    background-color:rgb(237, 27, 36);
+    
+}
+
+.logo2{
+
+    float: right;
+}
+
+.prueba{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+nav img{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+
+    background-color: #ff5e4e;
+}
+
+nav ul li a{
+    color:#f9f9f9 !important;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+
+}
+
+
+/*Cambiando los colores de la barra de navegacion*/
+
+  body::-webkit-scrollbar {
+    width: 13px;
+  }
+  body::-webkit-scrollbar-track {
+    border-radius: 12px;
+    background-color: #c6c6c6;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-button {
+    background-color: #131212;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:#ff5e4e ;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/**titulos de menu*/
+
+  h1{
+    
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: 'Stylish', sans-serif;
+    color: #b20000;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, #c6c6c6, 85%, rgba(255,255,255,1) 100%);
+  }
+
+
+   .tituloNosotros{
+
+font-size: 2.5rem;
+
+  }
+
+
+  p{
+     
+    padding: 60px 40px 40px 60px;
+  text-align: center;
+  font-family: 'Stylish', sans-serif;
+
+    font-size: 1.5rem;
+  
+     font-weight: 500;
+  }
+
+
+  span{
+
+font-weight: bolder;
+  }
+
+  /*estilos para los slides*/
+
+  
+
+  .d-block{
+
+    max-width: 700px;
+
+  }
+
+
+/*cambiando el color de el slide
+*/
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
+
+ .carousel-indicators .active{
+  background-color: #f00;
+}
+
+
+/*Menu*/
+.menus{
+display: grid;
+grid-template-columns: 650px 650px;
+grid-column-gap: 20px;
+
+}
+
+.tituloMenu{
+  font-size:2.5rem;
+}
+
+.titulodmenu{
+font-size: 2rem;
+}
+
+.descripcion p{
+
+  margin: 69px auto;
+  padding: 0;
+}
+
+
+/*ESTILOS AL MENU*/
+.menu{
+  position: relative;
+}
+
+.menu:hover h1{
+
+color:white;
+
+}
+
+.menu h1{
+   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, #c6c6c6, 85%, rgba(255,255,255,1) 100%);
+
+}
+
+.menu i{
+
+  float: left;
+  font-size: 2rem;
+  color: #ff5e4e;
+}
+
+.menu:hover i{
+color: white;
+}
+
+.menu:hover:after {
+
+  color: white;
+
+
+}
+
+
+
+li.menu{
+
+  list-style: none;
+}
+
+.entradas li{
+  list-style: none;
+}
+.platoFuerte li{
+  list-style: none;
+}
+.bebidas li{
+  list-style: none;
+}
+.postre li{
+  list-style: none;
+}
+
+
+/* Estilos a los item de el menu*/
+
+
+
+.listas li{
+
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Acme', sans-serif;
+  color: black;
+  font-weight: 100; 
+ text-transform: uppercase;
+  
+}
+
+.listas li span {
+
+  color:#c6c6c6;
+  font-size:1.5rem;
+}
+
+@media (max-width:800px ){
+
+  .menus{
+    display: grid;
+    grid-template-columns: 500px ;
+    grid-column-gap: 10px;
+    
+    }
+
+}
+
+@media (max-width:500px ){
+
+  .menus{
+    display: grid;
+    grid-template-columns: 300px ;
+    grid-column-gap: 10px;
+    
+    }
+
+}
+
+/*sugerencias*/
+
+.sugerencias{
+  width: 800px;
+  font-size: 7rem;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-style:dotted none none none;
+  border-width: 10px;
+  border-color:#ff5e4e;
+ padding: 10px;
+ margin: 200px 0;
+
+}
+
+.sugerencias h1{
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, #fffdfd, 85%, rgba(255,255,255,1) 100%);
+text-align: center;
+padding: 0;
+margin:10px 0 0 0;
+color: rgb(0, 0, 0);
+}
+
+.sugerencias h1 i{
+  color: rgb(12, 12, 12);
+}
+
+
+
+/*Estilos al chef*/
+.chef{
+
+  display: grid;
+  grid-template-columns:auto auto auto;
+  grid-column-gap: 10px;
+
+  background-color: #000;  
+ 
+}
+
+
+@media (max-width:800px ){
+
+  .chef{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    
+    }
+
+    .chef  .foto3{
+      max-width: 700px;
+    margin: 0 auto;
+    }
+    
+    .foto1, .foto2{
+      margin: 0 auto;
+      border: 3px solid #b20000;
+    }
+
+}
+
+
+
+
+.chef  .foto3{
+  max-width: 400px;
+
+}
+
+ .foto1, .foto2{
+  max-width: 300px
+
+}
+.fotosmas{
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap:5px; 
+}
+
+.historia h2{
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: 'Amatic SC', cursive;
+font-weight: bold;
+width: 300px;
+text-shadow:3px 3px rgb(198,198,198);
+color: white;
+border-style: none double none double;
+}
+.historia p{
+  text-align: center;
+  font-size: 1.3rem;
+   font-family: 'Stylish', sans-serif;
+font-weight: bold;
+padding: 0;
+color: white;
+}
+
+
+/*estilos al catering*/
+
+section.servicios{
+
+  background-color: #000;
+}
+
+.carousel-caption{
+position: absolute;
+background-color: rgba(0,0,0,0.75);
+height: 100%;
+top:0;
+left:0!important;
+padding: 30px;
+text-align: left;
+width:300px;
+}
+
+.carousel-caption h2{
+text-transform: uppercase;
+  font-family: 'Stylish', sans-serif;
+margin: 5px 0 20px 0;
+font-size: 2.5rem;
+}
+.carousel-caption p{
+padding: 4px;
+margin: 30px 0;
+font-family: 'Stylish', sans-serif;
+
+}
+
+.catering .d-block{
+max-width:100%;
+
+}
+
+/**footer*/
+
+.contactenos{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+
+}
+
+.contacto{
+ text-transform: uppercase;
+ font-family: 'Amatic SC', cursive;
+font-weight: bold;
+font-size: 3rem;
+color: #000;
+padding: 30px 20px;
+}
+
+
+.footerContenido h3{
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+ font-weight: bold;
+ font-size: 2rem;
+ color: #000;
+margin:20px 0 0 0; 
+
+}
+
+.mapa{
+  height: 300px;
+width: 100%;
+}
+
+.footerContenido{
+display: grid;
+grid-template-columns: 0.8fr 0.8fr 1fr;
+grid-column-gap: 20px;
+padding: 40px;
+}
+
+.footerContenido .direccion p{
+text-transform: uppercase;
+font-family: 'Amatic SC', cursive;
+font-weight: bold;
+font-size: 1.5rem;
+margin:15px 0;
+padding: 0;
+text-align: left;
+}
+
+.footerContenido .direccion p i{
+
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.footerContenido .horarios p i{
+
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+.footerContenido .direccion h3{
+text-transform: uppercase;
+  margin:10px 0;
+  padding: 0;
+  text-align: center;
+font-size: 2.5rem;
+}
+
+
+.footerContenido .horarios p{
+  text-transform: uppercase;
+font-family: 'Amatic SC', cursive;
+font-weight: bold;
+font-size: 1.5rem;
+margin:15px 0;
+padding: 0;
+text-align: left;
+  }
+  
+  .footerContenido .horarios h3{
+    text-transform: uppercase;
+    margin:10px 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2.5rem;
+  
+  }
+
+  .direccion a:hover p{
+    color: red;
+  }
+  
+  .direccion a:hover{
+    text-decoration: none;
+  }
+
+  .direccion a{
+    color:black;
+  }
+  
+  
+.quit{
+  color: white;
+}
+  .copywrite{
+
+    border: 3px solid red;
+    padding: 0;
+    margin: 0;
+  }
+
+  .copywrite p{
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+ 
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+ 
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+

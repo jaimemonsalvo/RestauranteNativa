@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-restaurante_nativa",
+  "version": "1.0.0",
+  "description": "diseño restaurante",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "leaflet": "^1.5.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "lite-server": "^2.4.0"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "Jaime Luis Monsalvo Pérez",
+  "license": "ISC"
+}
