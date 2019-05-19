@@ -490,6 +490,7 @@ width: 300px;
 text-shadow:3px 3px rgb(198,198,198);
 color: white;
 border-style: none double none double;
+margin-bottom: 20px;
 }
 .historia p{
   text-align: center;
